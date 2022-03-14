@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, intial-scale=1.0" />
 
-<head>
+    <title>Portfolio</title>
 
-  <meta charset="UTF-8">
-  <meta name ="viewport" content="width=device=width, intial-scale=1.0">
+    <!-- Bootstrap CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-  <title>Portfolio</title>
-
-  <!-- Bootstrap CDN link -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body>
-
-  <!-- Container Div -->
-  <div class="container">
-
-    <!-- Section 1: Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <!-- Our brand / logo -->
-      <a class="navbar-brand" href="#"><h1>Tom Mitchell</h1></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body>
+    <!-- Container Div -->
+    <div class="container">
+      <!-- Section 1: Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Our brand / logo -->
+        <a class="navbar-brand" href="#"><h1>Tom Mitchell</h1></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <!-- Collapsible button -->
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <!-- The links of our navbar -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Rates<span class="sr-only">(current)</span></a
+              >
+            </li>
 
-          <!-- The links of our navbar -->
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Rates<span class="sr-only">(current)</span></a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Info</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Info</a>
-          </li>
+            <!-- a Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Me
+              </a>
 
-          <!-- a Dropdown menu -->
-          <li class="nav-item dropdown">
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="Portfolio.html"
+                  >Professional Experience</a
+                >
+                <a class="dropdown-item" href="contact.html"
+                  >Schedule an appointment</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Me
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Portfolio.html">Professional Experience</a>
-              <a class="dropdown-item" href="contact.html">Schedule an appointment</a>
-            </div>
-
-          </li>
-        </ul>
+      <!-- Jumbotron element -->
+      <div class="jumbotron">
+        <!-- centered text -->
+        <h1 class="text-center">
+          <strong>Does your child need a tutor?</strong>
+        </h1>
+        <img
+          class="img thumbnail center-block"
+          src="https://resilienteducator.com/wp-content/uploads/sites/34/2016/10/homework-middle-school-student.jpg"
+          alt="KidStress"
+        />
+        <img
+          class="img thumbnail center-block"
+          src="https://student-tutor.com/wp-content/uploads/2014/09/Homework-schedule.png"
+          alt="Study plan"
+        />
       </div>
-    </nav>
-
-    <!-- Jumbotron element -->
-    <div class="jumbotron">
-
-      <!-- centered text -->
-      <h1 class="text-center"><strong>Does your child need a tutor?</strong></h1>
-      <img class="img thumbnail center-block" src="https://resilienteducator.com/wp-content/uploads/sites/34/2016/10/homework-middle-school-student.jpg" 
-           alt="KidStress"> 
-      <img class="img thumbnail center-block" src="https://student-tutor.com/wp-content/uploads/2014/09/Homework-schedule.png" 
-           alt="Study plan">
     </div>
-  </div>
 
-  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-</body>
-
+    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
